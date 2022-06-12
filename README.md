@@ -8,7 +8,7 @@ usermod -aG sudo
 su user
 cd ~
 
-# install openVPN
+# install and settings openVPN
 wget https://git.io/vpn -O openvpn-install.sh
 sudo bash openvpn-install.sh
 
