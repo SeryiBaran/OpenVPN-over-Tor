@@ -1,4 +1,4 @@
-# tor4openvpn
+# OvenVPN over Tor
 Пускаем на VPN-сервере весь трафик клиентов через сеть TOR
 
 ```bash 
