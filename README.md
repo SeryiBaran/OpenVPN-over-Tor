@@ -23,3 +23,7 @@ sudo iptables -t nat -A PREROUTING -i tun0 -p udp --dport 53 -s 10.8.0.0/24 -j D
 sudo iptables -t nat -A PREROUTING -i tun0 -p tcp -s 10.8.0.0/24 -j DNAT --to-destination 10.8.0.1:9040
 sudo iptables -t nat -A PREROUTING -i tun0 -p udp -s 10.8.0.0/24 -j DNAT --to-destination 10.8.0.1:9040
 ```
+# Screenshots
+![yandexplusonion](./YandexTor.jpg)
+
+Открытый ``.onion`` ресурс внутри _**Yandex браузера**_
