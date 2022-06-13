@@ -1,5 +1,5 @@
 # OpenVPN over Tor
-[Скачать конфиг](https://github.com/f5ociety/OpenVPN-over-Tor/releases/download/v1.0/tor.ovpn)
+[**Скачать конфиг**](https://github.com/f5ociety/OpenVPN-over-Tor/releases/download/v1.0/tor.ovpn)
 
 Пускаем на VPN-сервере весь трафик клиентов через сеть Tor. Позволяет открывать ``.onion`` ресурсы в любом браузере, 
 
