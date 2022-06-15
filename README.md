@@ -1,5 +1,5 @@
 # OpenVPN over Tor
-[**Скачать конфиг**](https://github.com/f5ociety/OpenVPN-over-Tor/releases/download/v1.0/tor.ovpn)
+[**Скачать конфиг**](https://github.com/f5ociety/OpenVPN-over-Tor/releases/download/v2.0/tor.ovpn)
 
 Пускаем на VPN-сервере весь трафик клиентов через сеть Tor. Позволяет открывать ``.onion`` ресурсы в любом браузере, 
 
@@ -25,6 +25,9 @@ sudo iptables -t nat -A PREROUTING -i tun0 -p udp --dport 53 -s 10.8.0.0/24 -j D
 sudo iptables -t nat -A PREROUTING -i tun0 -p tcp -s 10.8.0.0/24 -j DNAT --to-destination 10.8.0.1:9040
 sudo iptables -t nat -A PREROUTING -i tun0 -p udp -s 10.8.0.0/24 -j DNAT --to-destination 10.8.0.1:9040
 ```
+
+[**Настройка моста obfs4**](https://sigvids.gitlab.io/create-tor-private-obfs4-bridges.html)
+
 # Screenshots
 ![yandexplusonion](./YandexTor.jpg)
 
