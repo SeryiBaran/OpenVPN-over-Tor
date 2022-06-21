@@ -1,7 +1,9 @@
 # OpenVPN over Tor
 [**Скачать конфиг**](https://github.com/f5ociety/OpenVPN-over-Tor/releases/download/v2.0/tor.ovpn)
 
-Пускаем на VPN-сервере весь трафик клиентов через сеть Tor. Позволяет открывать ``.onion`` ресурсы в любом браузере, 
+[**Настройка моста obfs4**](https://sigvids.gitlab.io/create-tor-private-obfs4-bridges.html) - вы сможете использовать его лично, поставив его в настройках.
+
+Пускаем на VPN-сервере весь трафик клиентов через сеть Tor. Позволяет открывать ``.onion`` ресурсы в любом браузере. 
 
 ```bash 
 # add user
@@ -26,9 +28,9 @@ sudo iptables -t nat -A PREROUTING -i tun0 -p tcp -s 10.8.0.0/24 -j DNAT --to-de
 sudo iptables -t nat -A PREROUTING -i tun0 -p udp -s 10.8.0.0/24 -j DNAT --to-destination 10.8.0.1:9040
 ```
 
-[**Настройка моста obfs4**](https://sigvids.gitlab.io/create-tor-private-obfs4-bridges.html)
-
 # Screenshots
 ![yandexplusonion](./YandexTor.jpg)
 
 Открытый ``.onion`` ресурс внутри _**Yandex браузера**_
+
+**!Важно** - в браузере **``Firefox``** нужно поставить зайти в ``about:config`` и поставить у настройки ``network.dns.blockDotOnion`` значение ``false``.
