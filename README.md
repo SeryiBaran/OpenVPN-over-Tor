@@ -1,7 +1,7 @@
 # OpenVPN over Tor
 [**Скачать конфиг**](https://github.com/f5ociety/OpenVPN-over-Tor/releases/download/v2.0/tor.ovpn)
 
-[**Настройка моста obfs4**](https://sigvids.gitlab.io/create-tor-private-obfs4-bridges.html) - вы сможете использовать его лично, поставив его в настройках.
+[**Настройка моста obfs4**](https://sigvids.gitlab.io/create-tor-private-obfs4-bridges.html) - вы сможете использовать мост лично, поставив его в настройках Tor браузера.
 
 Пускаем на VPN-сервере весь трафик клиентов через сеть Tor. Позволяет открывать ``.onion`` ресурсы в любом браузере. 
 
